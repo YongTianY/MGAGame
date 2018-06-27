@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/TxtPeriods"
+            android:text="第X期开奖结果"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/TxtZhuangInfo"
+            android:layout_below="@id/TxtPeriods"
+            android:layout_marginTop="10dp"
+            android:text="庄地址"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:text="ACTxxxx"
+            android:layout_toEndOf="@id/TxtZhuangInfo"
+            android:layout_alignTop="@id/TxtZhuangInfo"/>
+
+        <TextView
+            android:text="抵押额"
+            android:id="@+id/TxtDiYa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/TxtZhuangInfo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="1000000ACT"
+            android:id="@+id/TxtValue"
+            android:layout_toEndOf="@id/TxtDiYa"
+            android:layout_alignTop="@id/TxtDiYa"/>
+
+        <CheckBox
+            android:id="@+id/ChkBZ"
+            android:enabled="false"
+            android:layout_below="@id/TxtDiYa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="爆庄"/>
+
+        <view class="android.support.v7.app.AlertController$RecycleListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ChkBZ"
+            android:layout_marginTop="10dp">
+
+        </view>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

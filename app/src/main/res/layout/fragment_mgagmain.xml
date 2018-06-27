@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MGAGMainActivityFragment"
+    tools:showIn="@layout/activity_mgagmain">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_below="@id/txtUser"
+            android:layout_marginTop="5dp"
+            android:text="Password" />
+
+        <TextView
+
+            android:id="@+id/txtUser"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/EdtUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/txtUser"
+            />
+
+        <EditText
+            android:id="@+id/EdtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/txtPassword"
+            android:layout_toEndOf="@id/txtPassword"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Login"
+            android:layout_below="@id/txtPassword"
+            android:layout_alignParentEnd="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:gravity="center_vertical"
+            android:layout_toStartOf="@+id/btnLogin"
+            android:layout_alignTop="@+id/btnLogin"
+            android:layout_alignBottom="@+id/btnLogin"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

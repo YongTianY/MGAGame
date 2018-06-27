@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/common_info" android:layout_width="match_parent"
+            android:id="@+id/common_info"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_below="@id/common_info"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llc"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注1"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注2"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注3"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注4"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注5"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="投注6"/>
+            <SeekBar
+                android:layout_marginTop="5dp"
+                android:id="@+id/Skb6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <Button
+            android:layout_below="@+id/llc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="下注"
+            android:id="@+id/BtnBets"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

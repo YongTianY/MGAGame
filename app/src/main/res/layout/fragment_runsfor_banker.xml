@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/common_info"
+            android:id="@+id/cominfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@id/cominfo"
+            android:id="@+id/TxtCurBanker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="当前庄家信息"/>
+
+        <TextView
+            android:layout_below="@id/TxtCurBanker"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtBankerAddress"
+            android:text="地址"/>
+
+        <TextView
+            android:id="@+id/TxtBankerAddressValue"
+            android:layout_toEndOf="@id/TxtBankerAddress"
+            android:layout_alignTop="@id/TxtBankerAddress"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTxxx"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TxtBankerValue"
+            android:layout_below="@id/TxtBankerAddress"
+            android:text="金额"/>
+
+        <TextView
+            android:id="@+id/TxtBankerAmount"
+            android:layout_toEndOf="@id/TxtBankerAddress"
+            android:layout_alignTop="@id/TxtBankerValue"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTxxx"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtBankerValue"
+            android:id="@+id/TxtTime"
+            android:text="时间"/>
+
+        <TextView
+            android:id="@+id/TxtTimeVal"
+            android:layout_toEndOf="@id/TxtBankerAddress"
+            android:layout_alignTop="@id/TxtTime"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTxxx"/>
+
+        <SeekBar
+            android:layout_below="@id/TxtTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/SkbVal" />
+
+        <Button
+            android:id="@+id/BtnJoin"
+            android:layout_marginTop="5dp"
+            android:text="参加竞选"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SkbVal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TxtCountDown"
+            android:text="00:00:00"
+            android:textSize="80sp"
+            android:gravity="center"
+            android:layout_below="@+id/BtnJoin"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
